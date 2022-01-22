@@ -188,3 +188,61 @@ ul{
     border: 1px solid transparent;
 }
 /* banner section end */
+
+/* about section start */
+#about{
+    margin-top: 55px;
+}
+.sec_info{
+    margin-left: 500px;
+}
+.sec_info h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+.sec_info img{
+    margin-bottom: 18px;
+}
+.about_sec{
+    margin-top: 38px;
+    display: flex;
+}
+.about_sec img{
+    width: 40%;
+}
+.about_sec p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    width: 60%;
+    line-height: 2;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+/* about section end */
+
+/* our services section start */
+#service .sec_info{
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+.service{
+    width: 1170px;
+    display: flex;
+}
+.service_sec{
+    width: 33%;
+}
+.service_sec img{
+    margin-left: 110px;
+    margin-bottom: -55px;
+}
+.service_sec_info{
+    height: 165px;
+    width: 300px;
+    background-color: var(--sec_color);
+    text-align: center;
+}
+.service_sec_info h4{
+    padding: 55px 0px 15px;
+}
+/* our services section end */
