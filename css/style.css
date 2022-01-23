@@ -28,6 +28,7 @@ Table of contents
 :root{
     --hlt_color: #0872b9;
     --hlt_color_2: #353535;
+    --hlt_color_3: #5bc5f4;
     --sec_color: #f1f1f1;
     --overlay_light: rgba(0,0,0,0.60);
     --white_color: #ffffff;
@@ -199,6 +200,7 @@ ul{
 .sec_info h3{
     font-size: 24px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .sec_info img{
     margin-bottom: 18px;
@@ -235,6 +237,8 @@ ul{
 .service_sec img{
     margin-left: 110px;
     margin-bottom: -55px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
 }
 .service_sec_info{
     height: 165px;
@@ -246,3 +250,112 @@ ul{
     padding: 55px 0px 15px;
 }
 /* our services section end */
+
+/* our portfolio section start */
+#portfolio .sec_info{
+    margin: 50px 500px 30px;
+}
+.portfolio{
+    width: 25%;
+}
+.portfolio_sec{
+    position: relative;
+}
+.portfolio_sec img{
+    margin-bottom: 20px;
+}
+.portfolio_sec_overlay{
+    position: absolute;
+    background-color: var(--overlay_light);
+    top: 0px;
+    left: 0px;
+    right: 73px;
+    bottom: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+.portfolio_sec_overlay a{
+    color: var(--white_color);
+    background-color: transparent;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    margin-left: 40%;
+}
+.portfolio_sec_overlay i{
+    font-size: 25px;
+    color: var(--white_color);
+    margin-top: 55%;
+}
+.portfolio_sec:hover .portfolio_sec_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio_sec:hover .portfolio_sec_overlay a:hover{
+    background-color: var(--hlt_color_3);
+}
+
+/* our portfolio section end */
+
+/* our team section start */
+#team{
+    margin-top: 40px;
+}
+.team_sec_images .team_img{
+    width: 25%;   
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.team_sec_images .team_img i{
+    color: var(--hlt_color);
+}
+.team_sec_images .team_img .team_img_overlay{
+    position: absolute;
+    background-color: var(--overlay_light);
+    top: 0;
+    left: 175px;
+    bottom: 0;
+    text-align: center;
+    height: 270px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.5s;
+}
+.team_sec_images .team_img .team_img_overlay i {
+    display: block;
+    padding-top: 10px;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    color: var(--white_color);
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all linear 0.5s;
+}
+.team_sec_images .team_img:hover .team_img_overlay{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+.team_sec_images .team_img .team_img_overlay i:hover{
+    background-color: var(--hlt_color_3);
+    border-color: transparent;
+}
+.team_img h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--hlt_color_2);
+    margin: 0 85px;
+    transition: 0.5s;
+}
+.team_img h5{
+    font-size: 14px;
+    color: #555555;
+    margin: 0 85px;
+}
+.team_img h4:hover{
+    color: var(--hlt_color_3);
+}
+/* our team section end */
