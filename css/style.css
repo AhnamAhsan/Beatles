@@ -8,14 +8,13 @@ Table of contents
 2.header section
 3.logo & nav section
 4.banner section
-4.sec info
-5.image section
-6.featured product section
-7.latest product section
+4.about section
+5.our services section
+6.our portfolio section
+7.our team section
 8.testimonial section
-9.blog section
-10.footer section
-11.copyright section
+9.footer section
+10.copyright section
 */
 /*common css start*/
 *{
@@ -273,7 +272,7 @@ ul{
     bottom: 25px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 .portfolio_sec_overlay a{
     color: var(--white_color);
@@ -281,6 +280,7 @@ ul{
     border: 10px solid transparent;
     border-radius: 50%;
     margin-left: 40%;
+    transition: 0.5s;
 }
 .portfolio_sec_overlay i{
     font-size: 25px;
@@ -359,3 +359,152 @@ ul{
     color: var(--hlt_color_3);
 }
 /* our team section end */
+
+/* testimonial section start */
+#testimonial{
+    margin-top: 60px;
+}
+#testimonial .sec_info{
+    margin-bottom: 10px;
+}
+.testimonial_sec{
+    width: 48%;
+    margin-right: 20px;
+    text-align: center;
+}
+.t_sec_info{
+    background-color: var(--sec_color);
+    margin-top: 20px;
+}
+.t_sec_info h2{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 5px;
+    color: var(--hlt_color_2);
+}
+.t_sec_info i{
+    font-size: 13px;
+}
+.t_sec_info span{
+    transition: 0.5s;
+}
+.t_sec_info span:hover{
+    color: var(--hlt_color_3);
+}
+.t_sec_info h4{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+.t_sec_info p{
+    font-size: 13px;
+    color: #555555;
+    line-height: 2;
+}
+/* testimonial section end *
+/
+/* footer section start */
+#footer{
+    margin-top: 60px;
+    background-color: var(--hlt_color_2);
+}
+.footer_info{
+    width: 20%;
+    padding: 50px 0px;
+}
+.footer_info p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #dddddd;
+    margin-top: 20px;
+    line-height: 2;
+}
+.contact{
+    width: 24%;
+    padding: 60px 0px;
+    margin-left: 30px;
+}
+.contact h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white_color);
+    margin-bottom: 30px;
+}
+.contact ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: var(--white_color);
+    transition: 0.5s;
+}
+.contact ul li a:hover{
+    color: var(--hlt_color_3);
+}
+.contact ul li a:last-child{
+    margin-left: 40px;
+}
+.contact ul li i{
+    color: var(--white_color);
+    background-color: var(--hlt_color_3);
+    border: 10px solid transparent;
+    border-radius: 50%;
+}
+.links{
+    width: 23%;
+    padding: 55px 0px;
+    margin-left: 20px;
+}
+.links h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white_color);
+    margin-bottom: 25px;
+}
+.more_links{
+    margin-left: 120px;
+    margin-top: -170px;
+}
+.links ul li a{
+    display: block;
+    color: var(--white_color);
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.links ul li a:hover{
+    color: var(--hlt_color_3);
+}
+.photos{
+    width: 25%;
+}
+.photos h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white_color);
+    margin: 50px 0px 25px;
+}
+.photos img{
+    margin-top: 6px;
+    margin-right: 5px;
+}
+/* footer section end */
+/* copyright section start */
+#copyright{
+    background-color: #555555;
+    padding: 10px 0px;
+}
+#copyright p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #dddddd;
+    padding-right: 5px;
+    padding-top: 7px;
+    margin: 0 auto;
+}
+#copyright a{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--hlt_color_3);
+    padding-top: 8px;
+}
+/* copyright section end */
