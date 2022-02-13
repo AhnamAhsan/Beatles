@@ -382,6 +382,7 @@ ul{
     text-transform: uppercase;
     margin: 5px;
     color: var(--hlt_color_2);
+    padding-top: 15px;
 }
 .t_sec_info i{
     font-size: 13px;
@@ -421,30 +422,30 @@ ul{
     margin-top: 20px;
     line-height: 2;
 }
-.contact{
+#contact{
     width: 24%;
     padding: 60px 0px;
     margin-left: 30px;
 }
-.contact h3{
+#contact h3{
     font-size: 16px;
     font-weight: 500;
     color: var(--white_color);
     margin-bottom: 30px;
 }
-.contact ul li a{
+#contact ul li a{
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     color: var(--white_color);
     transition: 0.5s;
 }
-.contact ul li a:hover{
+#contact ul li a:hover{
     color: var(--hlt_color_3);
 }
-.contact ul li a:last-child{
+#contact ul li a:last-child{
     margin-left: 40px;
 }
-.contact ul li i{
+#contact ul li i{
     color: var(--white_color);
     background-color: var(--hlt_color_3);
     border: 10px solid transparent;
@@ -508,3 +509,25 @@ ul{
     padding-top: 8px;
 }
 /* copyright section end */
+.preloader{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+#backToTop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 15px;
+    color: white;
+    background-color: var(--hlt_color_3);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
