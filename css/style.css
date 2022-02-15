@@ -58,8 +58,25 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
+#header.menu_animate{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    animation: smooth .3s;
+    background-color: var(--white_color);
+ }
+ @keyframes smooth {
+    0%{
+       top:-50px;
+    }
+    100%{
+       top:0px;
+    }
+ }
 /* header section start */
-#header{
+#top_header{
     background-color: var(--hlt_color);
 }
 .header_info{
@@ -425,13 +442,13 @@ ul{
     font-weight: 500;
     text-transform: uppercase;
     color: var(--hlt_color_2);
-    margin: 0 85px;
+    margin-left: calc(30%);
     transition: 0.5s;
 }
 .team_img h5{
     font-size: 14px;
     color: #555555;
-    margin: 0 85px;
+    margin-left: calc(30%);
 }
 .team_img h4:hover{
     color: var(--hlt_color_3);
@@ -523,23 +540,25 @@ ul{
     color: var(--white_color);
     margin-bottom: 30px;
 }
-#contact ul li a{
+.contact_sec_icon{
+    color: var(--white_color);
+    background-color: var(--hlt_color_3);
+    border: 9px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+.contact_sec_info{
+    margin-left: 40px;
+    margin-top: -45px;
+}
+.contact_sec_info a{
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     color: var(--white_color);
     transition: 0.5s;
 }
-#contact ul li a:hover{
-    color: var(--hlt_color_3);
-}
-#contact ul li a:last-child{
-    margin-left: 40px;
-}
-#contact ul li i{
-    color: var(--white_color);
-    background-color: var(--hlt_color_3);
-    border: 10px solid transparent;
-    border-radius: 50%;
+#contact ul li{
+    margin-bottom: 20px;
 }
 .links{
     width: 23%;
@@ -564,6 +583,7 @@ ul{
 }
 .links ul li a:hover{
     color: var(--hlt_color_3);
+    text-transform: lowercase;
 }
 .photos{
     width: 25%;
