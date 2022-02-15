@@ -557,6 +557,9 @@ ul{
     color: var(--white_color);
     transition: 0.5s;
 }
+.contact_sec_info a:hover{
+    color: var(--hlt_color_3);
+}
 #contact ul li{
     margin-bottom: 20px;
 }
